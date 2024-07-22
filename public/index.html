@@ -102,5 +102,89 @@
         </nav>
       </div>
     </header>
+    <!-- Hero section -->
+    <!--  group: Animasyon haline getirmek istediğimiz tün alanı grup haline getirri
+    reltive: Hero alnında kullanacağımız butonların positionunun parente göre belirlemek istiyoruz bu yüzden parente relativ özelliği veriyoruz. Childlerde de absolute kullanabileceğiz
+    -->
+    <section class="h-64 md:h-96 h-128 group relative">
+      <!-- Hero Image -->
+      <img
+        src="./images/hero.jpg"
+        alt="Main İmage"
+        class="h-full w-full object-cover"
+      />
+      <!-- Hero Content -->
+      <div
+        class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-black"
+      >
+        <!-- Hero content Container -->
+        <div class="container text-center my-5 w-2/3 pl-10 lg:pl-0">
+          <h3
+            class="text-nedion-grey tracking-wider group-hover:mb-1 duration-500"
+          >
+            Action, drama, thriller
+          </h3>
+          <h1
+            class="text-nedion-grey text-4xl lg:text-6xl group-hover:mb-1 duration-500"
+          >
+            The Avatar
+          </h1>
+          <p
+            class="text-nedion-grey group-hover:mb-1 duration-500 text-sm lg:text-base"
+          >
+            I pray in my heart that this dream never ends. I pray in my heart
+            that this world never ends
+          </p>
+          <!-- Detail Container -->
+          <div
+            class="flex space-x-8 opacity-0 group-hover:opacity-100 group-hover:mb-10 lg:group-hover:mb-20 duration-1000"
+          >
+            <!-- Watch -->
+            <div class="flex space-x-2 items-center cursor-pointer">
+              <a
+                href="#"
+                class="text-nedion-grey uppercase lg:text-lg hover:text-nedion-fuchsia2 duration-500"
+                >Watch Terailer</a
+              >
+              <div
+                class="flex h-8 w-8 rounded-full text-center items-center justify-center bg-nedion-fuchsia2"
+              >
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <!-- İnfo -->
+            <div class="flex space-x-2 items-center cursor-pointer">
+              <a
+                href="#"
+                class="text-nedion-grey uppercase lg:text-lg hover:text-nedion-fuchsia2 duration-500"
+                >Full Synopsis</a
+              >
+              <div
+                class="flex h-8 w-8 rounded-full text-center items-center justify-center bg-nedion-fuchsia2"
+              >
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+            <!-- Points -->
+            <div
+              class="flex space-x-3 absolute bottom-5 left-10 opacity-0 group-hover:opacity-100 duration-1000"
+            >
+              <div
+                class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-nedion-fuchsia1"
+              ></div>
+              <div
+                class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-nedion-fuchsia3"
+              ></div>
+              <div
+                class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-nedion-fuchsia1"
+              ></div>
+              <div
+                class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-nedion-fuchsia1"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

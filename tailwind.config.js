@@ -23,6 +23,10 @@ module.exports = {
         "nedion-grey": "#DDDDDD",
         "nedion-white": "#F7F7F7",
       },
+      // height değerini kendimiz belirrledik ve bunu özel class haline getirdik
+      spacing: {
+        128: "32rem",
+      },
     },
   },
   plugins: [],
