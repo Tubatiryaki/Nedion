@@ -634,6 +634,26 @@ a {
   top: 0.25rem;
 }
 
+.right-5 {
+  right: 1.25rem;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.top-6 {
+  top: 1.5rem;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -988,6 +1008,10 @@ a {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.fill-nedion-fuchsia3 {
+  fill: #a21caf;
 }
 
 .object-cover {
