@@ -22,10 +22,15 @@
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
 
-  <body class="font-open">
+  <body class="font-open dark">
+    <!-- Dark - Light Toggle -->
+    <div class="absolute top-1 left-5 cursor-pointer text-lg z-30">
+      <i class="fa-solid fa-sun text-white" id="sun"></i>
+      <i class="fa-solid fa-moon text-black hidden" id="moon"></i>
+    </div>
     <!-- Header section -->
     <header
-      class="sticky top-0 bg-black py-6 lg:py-12 text-nedion-grey uppercase z-20 shadow-lg shadow-nedion-fuchsia2"
+      class="sticky top-0 dark:bg-black bg-white py-6 lg:py-12 dark:text-nedion-grey text-black uppercase z-20 shadow-lg shadow-nedion-fuchsia2"
     >
       <!-- Header Container -->
       <div
@@ -885,5 +890,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
