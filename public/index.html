@@ -23,15 +23,18 @@
   </head>
 
   <body class="font-open dark">
-    <!-- Dark - Light Toggle -->
-    <div class="absolute top-1 left-5 cursor-pointer text-lg z-30">
-      <i class="fa-solid fa-sun text-white" id="sun"></i>
-      <i class="fa-solid fa-moon text-black hidden" id="moon"></i>
-    </div>
     <!-- Header section -->
     <header
-      class="sticky top-0 dark:bg-black bg-white py-6 lg:py-12 dark:text-nedion-grey text-black uppercase z-20 shadow-lg shadow-nedion-fuchsia2"
+      class="sticky top-0 dark:bg-black bg-white py-6 lg:py-12 dark:text-nedion-grey text-black uppercase z-20"
     >
+      <!-- Dark - Light Toggle -->
+      <div class="absolute top-1 left-5 cursor-pointer text-lg z-30">
+        <i class="fa-solid fa-sun text-white sticky top-0" id="sun"></i>
+        <i
+          class="fa-solid fa-moon text-black hidden sticky top-0"
+          id="moon"
+        ></i>
+      </div>
       <!-- Header Container -->
       <div
         class="container flex items-center justify-between space-x-8 lg:space-x-16"
@@ -194,7 +197,7 @@
       </div>
     </section>
     <!-- Movie Section -->
-    <section class="py-24 bg-black">
+    <section class="py-24 dark:bg-black bg-white">
       <!-- Movie content -->
       <div
         class="container flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-0"
@@ -490,7 +493,11 @@
         </div>
         <!-- Right Content -->
         <div class="basis-1/3 pl-10 lg:pl-0">
-          <h2 class="text-nedion-grey mb-8">hot news</h2>
+          <h2
+            class="text-nedion-grey mb-8 hover:text-nedion-fuchsia2 duration-500"
+          >
+            hot news
+          </h2>
           <!-- News Container  -->
           <div
             class="flex flex-row lg:flex-col lg:h-full lg:pb-16 justify-start lg:justify-between flex-wrap lg:flex-nowrap space-y-4"
@@ -507,7 +514,7 @@
               </div>
               <!-- Item Detail -->
               <div
-                class="pl-8 basis-2/3 text-nedion-grey group-hover:text-nedion-grey group-hover:cursor-pointer duration-500"
+                class="pl-8 basis-2/3 dark:text-nedion-grey group-hover:text-nedion-grey group-hover:cursor-pointer duration-500 text-black"
               >
                 <p class="text-sm">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -529,7 +536,7 @@
               </div>
               <!-- Item Detail -->
               <div
-                class="pl-8 basis-2/3 text-nedion-grey group-hover:text-nedion-grey group-hover:cursor-pointer duration-500"
+                class="pl-8 basis-2/3 dark:text-nedion-grey text-black group-hover:text-nedion-grey group-hover:cursor-pointer duration-500"
               >
                 <p class="text-sm">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -551,7 +558,7 @@
               </div>
               <!-- Item Detail -->
               <div
-                class="pl-8 basis-2/3 text-nedion-grey group-hover:text-nedion-grey group-hover:cursor-pointer duration-500"
+                class="pl-8 basis-2/3 dark:text-nedion-grey text-black group-hover:text-nedion-grey group-hover:cursor-pointer duration-500"
               >
                 <p class="text-sm">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -573,7 +580,7 @@
               </div>
               <!-- Item Detail -->
               <div
-                class="pl-8 basis-2/3 text-nedion-grey group-hover:text-nedion-grey group-hover:cursor-pointer duration-500"
+                class="pl-8 basis-2/3 dark:text-nedion-grey text-black group-hover:text-nedion-grey group-hover:cursor-pointer duration-500"
               >
                 <p class="text-sm">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -597,7 +604,7 @@
               </div>
               <!-- Item Detail -->
               <div
-                class="pl-8 basis-2/3 text-nedion-grey group-hover:text-nedion-grey group-hover:cursor-pointer duration-500"
+                class="pl-8 basis-2/3 dark:text-nedion-grey text-black group-hover:text-nedion-grey group-hover:cursor-pointer duration-500"
               >
                 <p class="text-sm">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -657,15 +664,21 @@
       </div>
     </section>
     <!--Post Section -->
-    <section class="py-24 bg-black text-nedion-grey">
+    <section class="py-24 dark:bg-black bg-white text-nedion-grey">
       <!-- Container -->
       <div class="container px-10 lg:px-0">
         <!-- Title -->
-        <h2 class="text-nedion-fuchsia3"><a href="#">Popular Post</a></h2>
+        <h2
+          class="dark:text-nedion-grey text-black dark:hover:text-nedion-fuchsia3 hover:text-nedion-fuchsia3 pb-4"
+        >
+          <a href="#">Popular Post</a>
+        </h2>
         <!-- Grid area -->
         <div class="grid grid-cols-6 gap-10">
           <!-- İtem-1- -->
-          <div class="col-span-6 md:col-span-3 border border-nedion-fuchsia2">
+          <div
+            class="col-span-6 md:col-span-3 border border-nedion-fuchsia2 dark:text-nedion-grey text-black"
+          >
             <!-- İtem 1 header -->
             <div
               class="border-b border-nedion-fuchsia2 p-4 flex items-center justify-between"
@@ -696,7 +709,9 @@
             </div>
           </div>
           <!-- İtem-2 -->
-          <div class="col-span-6 md:col-span-3 border border-nedion-fuchsia2">
+          <div
+            class="col-span-6 md:col-span-3 border border-nedion-fuchsia2 dark:text-nedion-grey text-black"
+          >
             <!-- İtem 2 header -->
             <div
               class="border-b border-nedion-fuchsia2 p-4 flex items-center justify-between"
@@ -728,7 +743,7 @@
           </div>
           <!-- İtem-3- -->
           <div
-            class="col-span-6 md:col-span-3 lg:col-span-2 border border-nedion-fuchsia2"
+            class="col-span-6 md:col-span-3 lg:col-span-2 border border-nedion-fuchsia2 dark:text-nedion-grey text-black"
           >
             <!-- İtem 3 header -->
             <div
@@ -761,7 +776,7 @@
           </div>
           <!-- İtem-4- -->
           <div
-            class="col-span-6 md:col-span-3 lg:col-span-2 border border-nedion-fuchsia2"
+            class="col-span-6 md:col-span-3 lg:col-span-2 border border-nedion-fuchsia2 dark:text-nedion-grey text-black"
           >
             <!-- İtem 4 header -->
             <div
@@ -794,7 +809,7 @@
           </div>
           <!-- İtem-5- -->
           <div
-            class="hidden lg:block col-span-6 md:col-span-3 lg:col-span-2 border border-nedion-fuchsia2"
+            class="hidden lg:block col-span-6 md:col-span-3 lg:col-span-2 border border-nedion-fuchsia2 dark:text-nedion-grey text-black"
           >
             <!-- İtem 5 header -->
             <div
@@ -829,7 +844,7 @@
       </div>
     </section>
     <!-- Footor section -->
-    <footer class="bg-black text-nedion-grey">
+    <footer class="dark:bg-black bg-white text-nedion-grey pt-6">
       <!-- footer container -->
       <div class="container flex flex-col md:flex-row px-10 md:px-0 pb-8">
         <!-- left -->
@@ -839,12 +854,16 @@
             class="text-2xl lg:text-3xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-nedion-fuchsia3 to-nedion-fuchsia1"
             >NEDION</a
           >
-          <p class="text-xs mt-2">2024 Tuba Tiryaki &copy; COPYRIGHT</p>
+          <p class="text-xs mt-2 dark:text-nedion-grey text-black">
+            2024 Tuba Tiryaki &copy; COPYRIGHT
+          </p>
         </div>
         <!-- Middle -->
         <div class="basis-1/3 pt-5 md:pt-0">
           <h2 class="text-nedion-fuchsia2 mb-2">Links</h2>
-          <div class="grid grid-cols-5 gap-2 uppercase">
+          <div
+            class="grid grid-cols-5 gap-2 uppercase dark:text-nedion-grey text-black"
+          >
             <a
               href="#"
               class="col-span-2 hover:text-nedion-fuchsia3 duration-500"
@@ -873,7 +892,7 @@
           </div>
         </div>
         <!-- right -->
-        <div class="bassi-1/3 pt-5 md:pt-0">
+        <div class="bassi-1/3 pt-5 md:pt-0 dark:text-nedion-grey text-black">
           <h2 class="mb-2 text-nedion-fuchsia2">Follow Us</h2>
           <form action="" class="flex">
             <input
